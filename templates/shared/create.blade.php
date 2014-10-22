@@ -1,3 +1,5 @@
+@extends('layout')
+
 @section('title')
 Create New {{ f('controller.name') }}
 @endsection

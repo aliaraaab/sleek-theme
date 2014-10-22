@@ -1,3 +1,5 @@
+@extends('layout')
+
 @section('navbar')
 @endsection
 
@@ -17,10 +19,13 @@ Login
 <div class="container">
     <div id="login">
         <div class="title">
-            <!-- <img src="{{ \URL::base('img/logo2.png') }}" alt=""> -->
-            <img src="{{ \URL::base('vendor/sleek-theme/img/xinix-logo.png') }}" alt="">
+            @section('login.header')
+            <a href="{{ URL::site() }}">
+                <img src="{{ URL::base('vendor/sleek-theme/img/xinix-logo.png') }}" alt="">
+            </a>
             <h3>Bono Sleek Themes</h3>
             <h2>Login Page</h2>
+            @show
         </div>
         <form method="POST">
             <div class="row">
@@ -32,16 +37,20 @@ Login
                 </div>
                 <div class="span-12">
                     <div class="row nav-login">
+                        @section('login.footer')
                         <label class="placeholder">
-                            Lupa password Anda? <a href="{{ \URL::site('/validation/reset') }}" >Klik di sini</a>.
+                            Lupa password Anda? <a href="#" >Klik di sini</a>.
                         </label>
                         <label class="placeholder">
-                            Belum memiliki akun? <a href="{{ \URL::site('register') }}" >Daftar di sini</a>.
+                            Belum memiliki akun? <a href="#" >Daftar di sini</a>.
                         </label>
+                        @show
                     </div>
                 </div>
                 <div class="span-12">
+                    @section('login.button')
                     <input type="submit" value="Sign In"></input>
+                    @show
                 </div>
             </div>
         </form>

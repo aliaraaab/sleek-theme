@@ -1,3 +1,5 @@
+@extends('layout')
+
 @section('content')
 <div class="row">
     <div class="welcome">

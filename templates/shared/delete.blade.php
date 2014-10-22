@@ -1,3 +1,5 @@
+@extends('layout')
+
 @section('title')
 {{ f('controller.name') }} Delete
 @endsection

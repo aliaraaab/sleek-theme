@@ -146,6 +146,11 @@ fieldset legend { display: block; margin-bottom: 10px; font-size: 21px; line-hei
     -o-border-radius: 5px;
     border-radius: 5px;
 }
+
+.pager-wrapper {
+    margin-top: 20px;
+}
+
 #login {
     width: 550px; background: #fff; margin-top: 0;
     margin-top: 7%;
