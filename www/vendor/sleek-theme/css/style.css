@@ -83,15 +83,15 @@ fieldset legend { display: block; margin-bottom: 10px; font-size: 21px; line-hei
 .nav-menu .topbar .user span { line-height: 120%; display: inline-block; vertical-align: top; top: 4px; position: relative; }
 .nav-menu .topbar .user span small { font-size: 85%; display: block; }
 .nav-menu .topbar .user i.fa-caret-down { position: absolute; right: 0; top: 33%; }
-.nav-menu .topbar ul.sub { display: none; }
-.nav-menu .topbar ul.fadeInDown {
-    display: block; position: absolute; padding: 0; list-style: none; width: 100%; background: #f9f9f9; border: 1px solid #e5e5e5;
+.nav-menu .topbar ul {
+    display: none; position: absolute; padding: 0; list-style: none; width: 100%; background: #f9f9f9; border: 1px solid #e5e5e5;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     border-radius: 5px;
 }
+.nav-menu .topbar ul.fadeInDown { display: block; }
 .nav-menu .topbar ul.sub li { display: block; float: none; margin: 0; padding-left: 15px; }
 .nav-menu .topbar ul.sub li:hover { background: #eee; }
 .nav-menu .topbar ul.sub li a { padding: 5px 15px 5px 0; color: #465d6f; font-family: open_sansregular; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; border-bottom: 1px solid #e5e5e5; }
@@ -189,6 +189,23 @@ fieldset .button { margin-top: 10px; }
 .confirm-area fieldset .row { margin: 0; }
 .confirm-area fieldset ul { margin: 0 auto; }
 
+ul.pagination.centered { margin: 30px auto 30px; }
+/*ul.pagination { padding: 0; }
+ul.pagination li { margin: 0 5px; }
+ul.pagination li a {
+    padding:0; font-size: 15px; line-height: 38px; border: 1px solid #08c; width: 40px; height: 40px; text-align: center; color: #08c;
+    -moz-border-radius: 500px;
+    -webkit-border-radius: 500px;
+    border-radius: 500px;
+}
+ul.pagination li a:hover,
+ul.pagination li a:focus { background: #08c; color: #fff; }
+ul.pagination li.active a { background: #08c; color: #fff; }*/
+/*ul.pagination li.next a { background: url('../img/paging-next.png') center no-repeat; width: 12px; border: 0; border-radius: 0; padding-top: 13px; padding-left: 0; padding-right: 0; margin-left: 20px; text-indent: -999999em; margin-right: 0; }
+ul.pagination li.arrow-last a { background: url('../img/paging-last.png') center no-repeat; width: 17px; border: 0; border-radius: 0; padding-top: 13px; padding-left: 0; padding-right: 0; margin-left: 10px; margin-right: 0; text-indent: -999999em; }
+ul.pagination li.prev a { background: url('../img/paging-prev.png') center no-repeat; width: 12px; border: 0; border-radius: 0; padding-top: 13px; padding-left: 0; padding-right: 0; margin-right: 20px; text-indent: -999999em; }
+ul.pagination li.arrow-first a { background: url('../img/paging-first.png') center no-repeat; width: 17px; border: 0; border-radius: 0; padding-top: 13px; padding-left: 0; padding-right: 0; margin-right: 10px; text-indent: -999999em; }*/
+
 #footer { background: #0096C9; border-top: 0; display: table; width: 100%; }
 #footer p { margin: 0; text-align: center; color: #fff; font-size: 0.8em; padding: 10px 0; }
 #footer p a { color: #E5D602; }
@@ -214,8 +231,8 @@ fieldset .button { margin-top: 10px; }
 body.blue .nav-menu { background: #08c; border-bottom: 1px solid #b1dbf9; }
 body.blue .row .sidebar { background-color: #ddeefb; border-right: 1px solid #b1dbf9; border-top: 1px solid #b1dbf9; }
 body.blue .sidebar .nav li a { border-bottom: 1px solid #cde3f1; }
-body.blue .sidebar .nav li a:hover { background: #CCE8FC; color: #007aff; border-color: #b1dbf9; }
-body.blue .sidebar .nav li a.select { border-color: #b1dbf9; color: #007aff; background: #CCE8FC; }
+body.blue .sidebar .nav li a:hover { color: #007aff; }
+body.blue .sidebar .nav li a.select { border-color: #b1dbf9; color: #007aff; }
 body.blue .table-container { border-color: #93CFFA; }
 body.blue .table thead tr { background: #CCE8FC; }
 body.blue .table th,
